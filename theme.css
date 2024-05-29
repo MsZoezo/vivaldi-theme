@@ -1,0 +1,23 @@
+.inner {
+    background-color: var(--colorAccentBg);
+}
+
+.bookmark-bar-top .bookmark-bar {
+    border: none;
+}
+
+.bookmark-bar .observer {
+    justify-content: center;
+}
+
+.address-top .mainbar {
+    border: none;
+}
+
+#panels-container {
+    background: none;
+}
+
+#browser.fullscreen #header {
+    display: none;
+}

@@ -1,0 +1,52 @@
+/* This file changes the container that shows the website. */
+
+/* Since we already add our own padding and shadow to webpageviews we don't need them on the entire container. */
+#webview-container {
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.webpageview {
+    margin: 5px 10px 10px 10px;
+    border-radius: var(--radius) !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* When tiled we outline the active webpageview */
+.webpageview.active.tiled {
+    outline: 2px solid var(--colorAccentBgDarker);
+}
+
+.webpageview > .row-wrapper {
+    border-radius: var(--radius);
+}
+
+/* We add our own margin and shadow to webpageviews so tiles don't need them. */
+.tile {
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+.SlideBar {
+    align-self: center;
+    border-radius: var(--radiusRound);
+}
+
+.SlideBar:hover {
+    background: var(--colorAccentBgDarker);
+}
+
+.SlideBar--FullHeight {
+    min-height: 95%;
+    min-width: 5px;
+}
+
+#browser.fullscreen .webpageview {
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+#browser.fullscreen .webpageview > .row-wrapper {
+    border-radius: 0 !important;
+}
+

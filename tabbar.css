@@ -1,0 +1,66 @@
+.tabbar-wrapper {
+    background-color: var(--colorAccentBg);
+}
+
+#browser:not(.transparent-tabbar) .tabbar-wrapper {
+    background-color: var(--colorBg);
+    margin: 5px 10px 10px 10px;
+    border-radius: var(--radius);
+    height: calc(100% - 15px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#browser:not(.transparent-tabbar) .tabbar-wrapper > .tabbar-wrapper {
+    margin: 0;
+    height: 100%;
+    box-shadow: none;
+}
+
+.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button, #tabs-tabbar-container.left, .tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button, #tabs-tabbar-container.right {
+    box-shadow: none !important;
+}
+
+.tabs-left .tab-position:not(.toolbar), .tabs-right .tab-position:not(.toolbar), .separator, .tabs-left .workspace-popup, .tabs-right .workspace-popup {
+    width: 95% !important;
+    margin: 0 2.5% !important;
+}
+
+.separator hr {
+    border: 1px solid;
+    border-color: var(--colorAccentFg);
+    width: 90%;
+}
+
+#tabs-tabbar-container.left, #tabs-tabbar-container.right {
+    border-radius: var(--radius);
+}
+
+.tabs-left .toolbar-tabbar, .tabs-right .toolbar-tabbar {
+    margin: 10px auto !important;
+}
+
+#browser:has(.transparent-tabbar) .svg-tab-stack rect {
+    fill: var(--colorAccentBgDark);
+    stroke: var(--colorAccentBgDark);
+}
+
+#browser:has(.transparent-tabbar) .tab.active .svg-tab-stack rect {
+    fill: var(--colorBg);
+    stroke: var(--colorBg);
+}
+
+#browser:has(.transparent-tabbar) .svg-tab-stack {
+    z-index: -9999;
+}
+
+#browser:has(.transparent-tabbar) .accordion-toggle-arrow, #browser:has(.transparent-tabbar) .tab-position {
+    z-index: 9999;
+}
+
+#browser:has(.transparent-tabbar) .accordion-toggle-arrow.closed.active {
+    background-color: rgba(0,0,0,0);
+}
+
+#browser .tab-position .tab.active {
+    background-color: var(--colorBg);
+}
